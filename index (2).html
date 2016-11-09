@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="ключевые слова">
+	<meta name="descriptions" content="краткое описание страницы">
+		<title>
+
+		</title>
+	<!--подключение стилей-->
+	<link rel="stylesheet" href="style.css">	
+	</head>
+	
+	<body>
+	Нужно создать несколько страниц
+	<ol>
+		<li>Главная</li>
+		<li>Блог</li>
+		<li>Контент
+			<ul>
+				<li><b>1 страница</b></li>
+				<li>2 страница</li>
+			</ul>
+		</li>
+		<li><i>Контакты</i></li>
+	</ol>
+	<dl>
+	<dt>Сайт</dt>
+	<dd>страница в интернете для просмотра</dd>
+	</dl>
+	<blockquote>Для просмотра страниц мы обычно используем браузер</blockquote>
+	<cite>Alex</cite>
+	<br><del>Каждый день я вношу новый код на страницу</del><br>
+	<ins><mark>Для обучения мне нужно печатать каждый день</mark></ins>
+	<hr> Простейшая таблица с данными
+	<table>
+		<tr>
+			<th>Количество дней</th>
+			<th>Занятия</th>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td>5</td>
+		</tr>
+	</table> 
+	<hr>
+Создаем формы, к примеру для ввода регистрационных данных пользователя
+<p>Please input your value in this fields</p><br>
+<form method="post" action="/echo"  enctype="multipart/form-data">
+<label>Логин<input type="text" name="login" id="login-field"></label><br>
+
+<label>Пароль<input type="password" name="password" id="password-field"></label><br>
+Ваш пол:<br>
+<label><input type="radio" name="sex" value="male">Мужской</label><br>
+
+<label><input type="radio" name="sex" value="female">Женский</label><br>
+<p>Год рождения</p>
+<select name="year" id="bd">
+	<option>1984</option>
+	<option>1985</option>
+	<option>1986</option>
+</select>
+<br>
+<label><input type="file" name="avatar">Загрузить свою фотку</label><br>
+
+<label><input type="checkbox" name="subscribe" id="subscribe-field" checked>Подпишите меня!</label><br>
+
+<input type="submit" value="Go away">
+</form>
+
+	<!--тестовая страница-->
+<!--скрипты лучше подключать перед закрывающим боди-->
+<script src="/.../.../object.js"></script>
+	</body>
+</html>

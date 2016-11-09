@@ -1,0 +1,150 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: "PT Sans Narrow", sans-serif;
+ 
+  
+  background: black url('/barbershop/img/body-bg.jpg') no-repeat 50% 0;
+}
+
+.page-header {
+  color: white;
+  background: black;
+}
+
+.page-header a {
+  color: white;
+}
+
+.l-center-wrapper {
+  width: 940px;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+
+.l-center-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.top-menu {
+  margin: 0;
+  padding: 0;
+  width: 780px;
+  float: left;
+  list-style: none;
+}
+
+.account-menu {
+  float: right;
+  max-width: 140px;
+}
+
+.top-menu li {
+  display: inline-block;
+}
+
+.top-menu a {
+  display: block;
+  padding: 30px 20px;
+  margin: -0.2em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.top-menu a:hover {
+  background: grey;
+}
+/* other method of decoration
+.top-menu a:active{
+  border-bottom:5px solid white;
+  padding-bottom:25px;
+}*/
+.top-menu a:active{
+    box-shadow:0 25px 0 -20px white;
+}
+.top-menu a:active:hover{
+    background:black;
+}
+.account-menu-enter {
+  display: block;
+  position:relative;
+  padding: 30px;
+  padding-left: 35px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.account-menu-enter:before{
+  content:"";
+  position:absolute;
+  width:16px;
+  height:16px;
+  top:32px;
+  left:0;
+  background:white url('/barbershop/img/icon-enter.jpg') no-repeat 0 0;
+}
+.logo{
+  display:block;
+  margin:0 50%;
+}
+.feature{
+  list-style:none;
+  padding:0;
+  margin:50px 0;
+  color:white;
+}
+.feature:after{
+  content:"";
+  display:table;
+  clear:both;
+}
+.feature li{
+  float:left;
+  width:300px;
+  margin-right:20px;
+  text-align:center;
+}
+.feature li:last-child{
+  margin-right:0;
+}
+.feature-title{
+  position:relative;
+  font-weight:bold;
+  font-size:30px;
+  text-transform:uppercase;
+  margin-bottom:80px;
+}
+.feature-title:after{
+  content:"";
+  background:white;
+  width:30px;
+  height:30px;
+  left:50%;
+    bottom:-50px;
+  margin-left:-15px;
+  position:absolute;  
+}
+.feature p{
+  font-size:14px;
+  font-weight:bold;
+  line-height:24px;
+  margin:0 10px;
+  text-transform:uppercase;
+}
+.login-popup{
+  position:absolute;
+  min-height:200px;
+  min-width:200px;
+  padding:50px 70px;
+  left:50%;
+  background:white;
+  top:120px;
+  margin-left:-230px;
+  display:none;
+}
